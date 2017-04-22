@@ -39,7 +39,7 @@
 	<body>
 		<div id="info">
 			<a href="http://anyirao.com" target="_blank">Anyi Rao</a> -
-			3D reconstruction using TSDF from point cloud. (It's a bit big, wait for a while)
+			3D reconstruction using Lidar and TSDF. (It's a bit big, wait for a while)
         </div>
 
         <script src="three.js-master/build/three.js"></script>
@@ -113,11 +113,11 @@
 					var material = new THREE.MeshStandardMaterial( {  shading: THREE.FlatShading } );
 					var mesh = new THREE.Mesh( geometry, material );
 
-					mesh.position.y = -1;
-					mesh.position.z = -0.4;
-					mesh.position.x = 0.1;
-					//mesh.rotation.x = - Math.PI / 2;
-					mesh.scale.multiplyScalar( 0.0035 );
+					mesh.position.y = -0.9;
+					mesh.position.z = 0.1;
+					mesh.position.x = -1.1;
+					mesh.rotation.x = - Math.PI / 2;
+					mesh.scale.multiplyScalar( 0.0032 );
 
 					mesh.castShadow = true;
 					mesh.receiveShadow = true;
